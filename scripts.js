@@ -8,6 +8,6 @@ $("#buttonAdd").on( "click", function() {
     console.log(todoNumber);
 })
 
-$(`#todo-${todoNumber}`).on("click", function() {
+$(`#todo-${todoNumber}`).on("click", "li", function() {
     $(`#todo-${todoNumber}`).css("text-decoration", "line-through")
 })
