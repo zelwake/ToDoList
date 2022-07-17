@@ -1,6 +1,13 @@
 let item = ""
+let todoNumber = 1
 
-$("button").click(() => {
+$("#buttonAdd").on( "click", function() {
     item = $("input").val();
-    $("ul").append($(`<li> ${item}</li>`));
+    $("ul").append($(`<li id="todo-${todoNumber}"> ${item}</li>`));
+    todoNumber++;
+    console.log(todoNumber);
+})
+
+$(`#todo-${todoNumber}`).on("click", function() {
+    $(`#todo-${todoNumber}`).css("text-decoration", "line-through")
 })
