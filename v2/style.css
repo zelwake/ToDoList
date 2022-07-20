@@ -1,7 +1,17 @@
 body {
-    background-color: aqua;
+    background-color: aquamarine
 }
 
+img {
+    width: 26px;
+    height: 26px;
+    padding: 2px;
+}
+
+img:hover {
+    opacity: 50%;
+}
+/* whole list box */
 .todoList {
     width: 400px;
     margin: auto;
@@ -13,9 +23,10 @@ body {
     font-size: 40px;
     text-align: center;
     padding-top: 15px;
-    text-transform: uppercase;
+    text-transform: uppercase;;    
+    font-family: 'Montserrat', sans-serif;
 }
-
+/* input box items */
 .inputBox {
     width: 80%;
     margin: auto;
@@ -24,29 +35,46 @@ body {
     border: solid 2px black;
     display: flex;
     align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
 }
 
 input {
-    font-size: 20px;
-    flex-grow: 1;
+    font-size: 25px;
+    flex-grow: 5;
 }
 
+#buttonAdd {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: solid thin black;
+    background-color: purple;
+
+}
+/* list of items */
 ul {
     list-style-type: none;
     padding: 0px;
     margin: auto;
     width: 80%;
+    font-family: 'Mukta', sans-serif;
 }
 
 li {
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .text {
     display: flex;
     align-content: stretch;
+    align-items: center;
 }
 
-span {
+span.todoListItem {
     flex-grow: 5;
 }
