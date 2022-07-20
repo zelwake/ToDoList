@@ -3,8 +3,8 @@ body {
 }
 
 .todoList {
-    width:400px;
-    margin:auto;
+    width: 400px;
+    margin: auto;
     background-color: aliceblue;
     padding-bottom: 40px;
 }
@@ -13,6 +13,7 @@ body {
     font-size: 40px;
     text-align: center;
     padding-top: 15px;
+    text-transform: uppercase;
 }
 
 .inputBox {
@@ -27,4 +28,18 @@ body {
 input {
     font-size: 20px;
     flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-content: stretch;
+    
+}
+
+.text {
+    flex-grow: 5;
 }
