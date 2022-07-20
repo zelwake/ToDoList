@@ -32,7 +32,7 @@ img:hover {
     margin: auto;
     margin-bottom: 15px;
     padding: 0px;
-    border: solid 2px black;
+    border: solid 3px black;
     display: flex;
     align-content: stretch;
     align-items: stretch;
@@ -42,16 +42,16 @@ img:hover {
 
 input {
     font-size: 25px;
-    flex-grow: 5;
+    flex-grow: 4;
+    border: none;
 }
 
 #buttonAdd {
     font-family: 'Mukta', sans-serif;
     color: white;
     font-size: 25px;
-    padding-left: 3px;
-    padding-right: 3px;
-    border: solid thin black;
+    padding: 2px;
+    padding-left: 4px;
     background-color: purple;
 
 }
@@ -63,10 +63,9 @@ ul {
     width: 80%;
     font-family: 'Mukta', sans-serif;
 }
-
+/* individual items */
 li {
     margin-bottom: 10px;
-    font-size: 25px;
 }
 
 .text {
@@ -76,5 +75,6 @@ li {
 }
 
 span.todoListItem {
-    flex-grow: 5;
+    flex-grow: 5;    
+    font-size: 25px;
 }
